@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 const port = 3000
+const databaseModule = require('./databaseModule');
+const thingModel = require('./thingModel');
 
 app.use(express.static(__dirname + '\\staticFiles\\'))
 app.use(express.json())
